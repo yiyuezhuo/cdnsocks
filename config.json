@@ -1,0 +1,17 @@
+{
+    "local_ip": "127.0.0.1",
+    "remote_ip": "127.0.0.1",
+    "remote_port": 80,
+    "routes": [
+        {
+            "name": "ssh",
+            "local_port": 2200,
+            "route_port": 22
+        },
+        {
+            "name": "http",
+            "local_port": 8800,
+            "route_port": 8800
+        }
+    ]
+}

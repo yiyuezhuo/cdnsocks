@@ -8,7 +8,8 @@ import json
 
 #from config import xi_host,xi_port,local_host,local_port,xi_local_host,timeout
 
-from utils import parse_request,socket_to_websocket,websocket_to_socket,recv_http_websocket
+#from utils import parse_request,socket_to_websocket,websocket_to_socket,recv_http_websocket
+from utils import socket_to_websocket,websocket_to_socket
 import struct
 
 unsigned_short = struct.Struct("H")

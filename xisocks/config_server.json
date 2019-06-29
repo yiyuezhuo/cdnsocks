@@ -1,0 +1,6 @@
+{
+    "xi_local_host" : "0.0.0.0",
+    "xi_port" : 8800,
+
+    "timeout" : 5.0
+}

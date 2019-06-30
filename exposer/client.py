@@ -4,7 +4,7 @@ import asyncio
 import json
 with open("config_client.json") as f:
     config = json.load(f)
-expose_port, client_port, reverse_ip, reverse_port = config['expose_port'], config['client_port'], config['reverse_ip'], config['reverse_port']
+expose_port, reverse_ip, reverse_port = config['expose_port'], config['reverse_ip'], config['reverse_port']
 
 from utils import pipe, parse_data,unsigned_short
 

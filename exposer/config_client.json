@@ -1,6 +1,5 @@
 {
     "expose_port": 8888,
-    "client_port": 10001,
     "reverse_ip": "127.0.0.1",
-    "reverse_port": 10002
+    "reverse_port": 10100
 }

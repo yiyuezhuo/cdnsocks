@@ -6,17 +6,22 @@
         {
             "name": "ssh",
             "local_port": 2200,
-            "route_port": 22
+            "route_port": 27857
         },
         {
             "name": "xisocks",
             "local_port": 8800,
-            "route_port": 8800
+            "route_port": 8801
         },
         {
-            "name": "jupyter",
-            "local_port": 9999,
-            "route_port": 9999
+            "name": "reverse",
+            "local_port": 10100,
+            "route_port": 10101
+        },
+        {
+            "name": "request",
+            "local_port": 10200,
+            "route_port": 10201
         }
     ]
 }

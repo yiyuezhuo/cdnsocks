@@ -40,7 +40,7 @@ async def reverse_listener(reader, writer):
                 print("reverse proxy established")
             else:
                 print("A new connect have been established, the old one is disconnected")
-                state_map['connected_reader'].close()
+                #state_map['connected_reader'].close()
                 state_map['connected_writer'].close()
 
             state_map['activated'] = True

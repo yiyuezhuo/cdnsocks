@@ -9,9 +9,14 @@
             "route_port": 22
         },
         {
-            "name": "http",
+            "name": "xisocks",
             "local_port": 8800,
             "route_port": 8800
+        },
+        {
+            "name": "jupyter",
+            "local_port": 9999,
+            "route_port": 9999
         }
     ]
 }

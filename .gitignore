@@ -1,2 +1,3 @@
 *.pyc
 _config.json
+*.log

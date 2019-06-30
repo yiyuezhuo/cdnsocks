@@ -1,4 +1,4 @@
 {
-    "reverse_port": 10002,
-    "request_port": 10003
+    "reverse_port": 9999,
+    "request_port": 10000
 }

@@ -123,7 +123,7 @@ async def config_server(listener, host, port, desc=None):
 server_reverse = loop.run_until_complete(config_server(reverse_listener, '0.0.0.0', reverse_port, desc='exposer'))
 server_request = loop.run_until_complete(config_server(request_listener, '0.0.0.0', request_port, desc='request'))
 
-async def debug_coro(step=2):
+async def debug_coro(step=60):
     while True:
         await asyncio.sleep(step)
         print("DEBUG: Published by the headquarters")

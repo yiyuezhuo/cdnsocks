@@ -28,7 +28,7 @@ async def listener(reader, writer):
 
     if request['method'] == b'CONNECT':
         #await writer.write(b'HTTP/1.0 200 Connection Established\r\nProxy-agent: Pyx\r\n\r\n')
-        writer.write(b'HTTP/1.0 200 Connection Established\r\nProxy-agent: Pyx\r\n\r\n')
+        writer.write(b'HTTP/1.1 200 Connection Established\r\n\r\n')
         await writer.drain()
     else:
         remote_writer.write(data)

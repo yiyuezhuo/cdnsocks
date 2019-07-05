@@ -47,7 +47,12 @@ NEED_DATA
         #import pdb;pdb.set_trace()
     
     if request['method'] == b'CONNECT':
-        request['host'], request['port'] = request['headers'][b'host'].split(b':')
+        print('request["headers"][b"host"]', request['headers'][b'host'])
+        if b':' not in request['headers'][b'host']:
+            request['host'] = request['headers'][b'host']
+            request['port'] = 443
+        else:
+            request['host'], request['port'] = request['headers'][b'host'].split(b':')
         request['host'] = request['host'].strip()
         request['port'] = int(request['port'])
     elif request['method'] == b'GET':
